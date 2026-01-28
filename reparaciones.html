@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reparaciones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+
+            <div class="header-logo">
+                <img src="img/logo.png" alt="Logo LAM">
+            </div>
+
+            <div class="header-buscador">
+                <div class="buscador-contenedor">
+                    <form id="form-buscador">
+                        <input type="text" id="buscador" placeholder="Buscar productos...">
+                    </form>
+
+                    <div id="sugerencias" class="sugerencias"></div>
+                </div>
+            </div>
+
+            <div class="header-acciones">
+                <button>Login</button>
+                <button>Carrito</button>
+            </div>
+
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li class="submenu">
+                    <a href="ordenadores.html">Producto 1 (Ordenadores)</a>
+                    <ul class="desplegable">
+                        <li><a href="listado.html?categoria=ordenadores">Ordenadores</a></li>
+                        <li><a href="listado.html?categoria=ordenadores">Periféricos</a></li>
+                        <li><a href="listado.html?categoria=ordenadores">Componentes</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="consolas.html">Producto 2 (Consolas)</a>
+                    <ul class="desplegable">
+                        <li><a href="listado.html?categoria=playstation">PlayStation</a></li>
+                        <li><a href="listado.html?categoria=playstationpro">PlayStation Pro</a></li>
+                        <li><a href="listado.html?categoria=xbox">Xbox</a></li>
+                        <li><a href="listado.html?categoria=xboxseries">Xbox Series</a></li>
+                        <li><a href="listado.html?categoria=nintendo">Nintendo</a></li>
+                        <li><a href="listado.html?categoria=nintendooled">Nintendo OLED</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="reparaciones.html">Producto 3 (Reparaciones)</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-reparaciones">
+
+        <section class="formulario-reparaciones">
+            <h2>Formulario de contacto</h2>
+            <p>
+                Indica qué necesitas reparar o modificar y te daremos un presupuesto
+                aproximado.
+            </p>
+
+            <form>
+
+                <h3>Datos personales</h3>
+
+                <label>Nombre:</label><br>
+                <input type="text" class="campo-formulario"><br><br>
+
+                <label>Apellidos:</label><br>
+                <input type="text" class="campo-formulario"><br><br>
+
+                <label>Correo electrónico:</label><br>
+                <input type="email" class="campo-formulario"><br><br>
+
+                <label>Teléfono:</label><br>
+                <input type="tel" class="campo-formulario"><br><br>
+
+                <h3>Datos del servicio</h3>
+
+                <label>Tipo de servicio:</label><br>
+                <select class="campo-formulario">
+                    <option>Reparación</option>
+                    <option>Modificación</option>
+                </select><br><br>
+
+                <label>Tipo de dispositivo:</label><br>
+                <input type="text" class="campo-formulario"><br><br>
+
+                <label>Describe tu necesidad:</label><br>
+                <textarea rows="5" class="campo-formulario"></textarea><br><br>
+
+                <label>Presupuesto aproximado (€):</label><br>
+                <input type="number" class="campo-formulario"><br><br>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-box">Preguntas frecuentes</div>
+        <div class="footer-box">Métodos de contacto</div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

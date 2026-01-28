@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de productos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+
+            <div class="header-logo">
+                <img src="img/logo.png" alt="Logo LAM">
+            </div>
+
+            <div class="header-buscador">
+                <div class="buscador-contenedor">
+                    <form id="form-buscador">
+                        <input type="text" id="buscador" placeholder="Buscar productos...">
+                    </form>
+
+                    <div id="sugerencias" class="sugerencias"></div>
+                </div>
+            </div>
+
+            <div class="header-acciones">
+                <button>Login</button>
+                <button>Carrito</button>
+            </div>
+
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li class="submenu">
+                    <a href="ordenadores.html">Producto 1 (Ordenadores)</a>
+                    <ul class="desplegable">
+                        <li><a href="listado.html?categoria=ordenadores">Ordenadores</a></li>
+                        <li><a href="listado.html?categoria=perifericos">Periféricos</a></li>
+                        <li><a href="listado.html?categoria=componentes">Componentes</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="consolas.html">Producto 2 (Consolas)</a>
+                    <ul class="desplegable">
+                        <li><a href="listado.html?categoria=playstation">PlayStation</a></li>
+                        <li><a href="listado.html?categoria=playstationpro">PlayStation Pro</a></li>
+                        <li><a href="listado.html?categoria=xbox">Xbox</a></li>
+                        <li><a href="listado.html?categoria=xboxseries">Xbox Series</a></li>
+                        <li><a href="listado.html?categoria=nintendo">Nintendo</a></li>
+                        <li><a href="listado.html?categoria=nintendooled">Nintendo OLED</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="reparaciones.html">Producto 3 (Reparaciones)</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-listado">
+
+        <h2 class="titulo-listado">Listado de productos</h2>
+
+        <section class="listado-productos">
+
+            <a href="producto.html?id=1" class="producto-item">Producto 1</a>
+            <a href="producto.html?id=2" class="producto-item">Producto 2</a>
+            <a href="producto.html?id=3" class="producto-item">Producto 3</a>
+
+            <a href="producto.html?id=4" class="producto-item">Producto 4</a>
+            <a href="producto.html?id=5" class="producto-item">Producto 5</a>
+            <a href="producto.html?id=6" class="producto-item">Producto 6</a>
+
+            <a href="producto.html?id=7" class="producto-item">Producto 7</a>
+            <a href="producto.html?id=8" class="producto-item">Producto 8</a>
+            <a href="producto.html?id=9" class="producto-item">Producto 9</a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-box">Preguntas frecuentes</div>
+        <div class="footer-box">Métodos de contacto</div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

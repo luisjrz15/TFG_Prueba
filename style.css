@@ -1,0 +1,350 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* HEADER */
+
+header {
+    border-bottom: 2px solid #000;
+    padding: 10px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO */
+
+.header-logo img {
+    height: 80px;
+}
+
+/* BUSCADOR */
+
+.header-buscador {
+    flex: 1;
+    text-align: center;
+}
+
+.buscador-contenedor {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* INPUT */
+.buscador-contenedor input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.sugerencias {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 2px solid #000;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 999;
+}
+
+.sugerencia-item {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    text-align: left;
+}
+
+.sugerencia-item:hover {
+    background-color: #eee;
+}
+
+/* LOGIN + CARRITO */
+
+.header-acciones button {
+    margin-left: 10px;
+}
+
+/* NAV */
+
+nav {
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 10px;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* MENU DESPLEGABLE */
+
+.desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #000;
+}
+
+.desplegable li {
+    padding: 8px;
+    border-bottom: 1px solid #000;
+}
+
+.submenu:hover .desplegable {
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 2px solid #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-box {
+    display: inline-block;
+    width: 40%;
+    border: 2px solid #000;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* INDEX */
+
+.seccion-principal {
+    padding: 30px;
+    text-align: center;
+}
+
+.index-bloque {
+    display: inline-flex;
+    width: 25%;
+    height: 250px;
+    border: 2px solid #000;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.seccion-noticias {
+    padding: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.noticia {
+    border: 2px solid #000;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.seccion-nuevos {
+    padding: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.nuevo-producto {
+    display: inline-block;
+    width: 30%;
+    height: 150px;
+    border: 2px solid #000;
+    margin: 10px;
+    text-align: center;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+/* ORDENADORES */
+
+.main-ordenadores {
+    padding: 20px;
+}
+
+.ordenadores-buscador {
+    border: 2px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ordenadores-productos {
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.ordenadores-productos h2 {
+    margin-bottom: 15px;
+}
+
+.ordenadores-productos::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.ordenador-item {
+    display: inline-flex;
+    width: 24%;
+    height: 150px;
+    border: 2px solid #000;
+
+    justify-content: center;
+    align-items: center; 
+
+    text-align: center;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    color: #000;
+}
+
+/* CONSOLAS */
+
+.main-consolas {
+    padding: 20px;
+}
+
+.consolas-buscador {
+    border: 2px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.consolas-productos {
+    text-align: justify;
+}
+
+.consolas-productos::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.consolas-productos .consola-item {
+    display: inline-block;
+    width: 47%;
+    height: 150px;
+    border: 2px solid #000;
+    text-align: center;
+    padding-top: 60px;
+    box-sizing: border-box;
+    margin: 30px 1%;
+}
+
+/* REPARACIONES */
+
+.main-reparaciones {
+    padding: 40px;
+    text-align: center;
+}
+
+.formulario-reparaciones {
+    display: inline-block;
+    width: 60%;
+    border: 2px solid #000;
+    padding: 30px;
+}
+
+.campo-formulario {
+    width: 80%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+
+/* PLANTILLA DE PRODUCTO */
+
+.producto-detalle {
+    padding: 30px;
+}
+
+.producto-imagen,
+.producto-info {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+}
+
+.producto-imagen img {
+    width: 100%;
+    border: 2px solid #000;
+}
+
+.producto-info {
+    margin-left: 5%;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.producto-comprar {
+    padding: 10px 20px;
+}
+
+a.producto,
+a.consola-item,
+a.index-bloque {
+    text-decoration: none;
+    color: #000;
+    display: inline-flex;
+}
+
+
+/* PLANTILLA DE LISTADO DE PRODUCTOS */
+
+.main-listado {
+    padding: 30px;
+    text-align: center;
+}
+
+.titulo-listado {
+    margin-bottom: 30px;
+}
+
+.listado-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.producto-item {
+    height: 200px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+   text-align: center;
+}

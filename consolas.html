@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Consolas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+
+            <div class="header-logo">
+                <img src="img/logo.png" alt="Logo LAM">
+            </div>
+
+            <div class="header-buscador">
+                <div class="buscador-contenedor">
+                    <form id="form-buscador">
+                        <input type="text" id="buscador" placeholder="Buscar productos...">
+                    </form>
+
+                    <div id="sugerencias" class="sugerencias"></div>
+                </div>
+            </div>
+
+            <div class="header-acciones">
+                <button>Login</button>
+                <button>Carrito</button>
+            </div>
+
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li class="submenu">
+                    <a href="ordenadores.html">Producto 1 (Ordenadores)</a>
+                    <ul class="desplegable">
+                        <li><a href="listado.html?categoria=ordenadores">Ordenadores</a></li>
+                        <li><a href="listado.html?categoria=perifericos">Periféricos</a></li>
+                        <li><a href="listado.html?categoria=componentes">Componentes</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="consolas.html">Producto 2 (Consolas)</a>
+                    <ul class="desplegable">
+                        <li><a href="listado.html?categoria=playstation">PlayStation</a></li>
+                        <li><a href="listado.html?categoria=playstationpro">PlayStation Pro</a></li>
+                        <li><a href="listado.html?categoria=xbox">Xbox</a></li>
+                        <li><a href="listado.html?categoria=xboxseries">Xbox Series</a></li>
+                        <li><a href="listado.html?categoria=nintendo">Nintendo</a></li>
+                        <li><a href="listado.html?categoria=nintendooled">Nintendo OLED</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="reparaciones.html">Producto 3 (Reparaciones)</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-consolas">
+
+        <section class="consolas-productos">
+
+            <a href="listado.html?categoria=playstation" class="consola-item" id="playstation">
+                PlayStation
+            </a>
+
+            <a href="listado.html?categoria=playstationpro" class="consola-item" id="playstation-pro">
+                PlayStation Pro
+            </a>
+
+            <a href="listado.html?categoria=xbox" class="consola-item" id="xbox">
+                Xbox One
+            </a>
+
+            <a href="listado.html?categoria=xboxseries" class="consola-item" id="xbox-series">
+                Xbox Series
+            </a>
+
+            <a href="listado.html?categoria=nintendo" class="consola-item" id="nintendo">
+                Nintendo Switch
+            </a>
+
+            <a href="listado.html?categoria=nintendooled" class="consola-item" id="nintendo-oled">
+                Nintendo OLED
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-box">Preguntas frecuentes</div>
+        <div class="footer-box">Métodos de contacto</div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
